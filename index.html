@@ -8,7 +8,7 @@
     <meta property="og:description" content="現実とデジタル表現の関係を、ソフトウェアによって実装する。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suzutaku1014.github.io/" />
-    <meta name="theme-color" content="#eeeeee" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Takumi Suzuki — Portfolio</title>
     <link rel="preconnect" href="https://raw.githubusercontent.com" />
     <link rel="preload" href="assets/autumn-hero.jpg" as="image" />
@@ -73,7 +73,10 @@
             <p>
               Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系です。深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
             </p>
-            <p class="project-tech"><span>使用技術</span>Python / PyTorch / OpenCV / OpenGL / GLSL</p>
+            <dl class="project-details">
+              <div><dt>使用技術</dt><dd>Python / PyTorch / OpenCV / OpenGL / GLSL</dd></div>
+              <div><dt>実装のポイント</dt><dd>単眼深度を筆の大きさと空気遠近へ、オプティカルフローを筆触の向きへ対応づけ、映像の変化を描画へ反映。</dd></div>
+            </dl>
             <div class="links">
               <a href="https://github.com/suzutaku1014/ombrelle-live">Code & documentation ↗</a>
             </div>
@@ -92,7 +95,10 @@
             <p>
               レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサーです。海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
             </p>
-            <p class="project-tech"><span>使用技術</span>WebGL / GLSL / Ray Marching</p>
+            <dl class="project-details">
+              <div><dt>使用技術</dt><dd>WebGL / GLSL / Ray Marching</dd></div>
+              <div><dt>実装のポイント</dt><dd>大気散乱をフラグメントシェーダ内で数値積分し、空・海面反射・体積雲・昼夜変化を同じ光のモデルへ統合。</dd></div>
+            </dl>
             <div class="links">
               <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">Live demo ↗</a>
               <a href="https://github.com/suzutaku1014/sky-ocean-renderer">Source ↗</a>
