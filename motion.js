@@ -10,9 +10,7 @@ const targets = [
   ...document.querySelectorAll(".about-grid > *"),
   ...document.querySelectorAll(".project"),
   ...document.querySelectorAll(".experience-grid > *"),
-  ...document.querySelectorAll(".skill-group"),
-  ...document.querySelectorAll(".profile-intro > *"),
-  ...document.querySelectorAll(".timeline-item"),
+  ...document.querySelectorAll(".career-item"),
   ...document.querySelectorAll(".contact-grid > *"),
 ];
 

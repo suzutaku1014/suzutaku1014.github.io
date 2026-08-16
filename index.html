@@ -8,7 +8,7 @@
     <meta property="og:description" content="現実とデジタル表現の関係を、ソフトウェアによって実装する。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suzutaku1014.github.io/" />
-    <meta name="theme-color" content="#f3f2ee" />
+    <meta name="theme-color" content="#f5f6f7" />
     <title>Takumi Suzuki — Portfolio</title>
     <link rel="preconnect" href="https://raw.githubusercontent.com" />
     <link rel="preload" href="assets/autumn-hero.jpg" as="image" />
@@ -37,16 +37,16 @@
           <h2>このサイトについて</h2>
         </div>
         <div class="about-grid">
-          <p class="statement">
-            現実とデジタルのあいだに、<br />
-            人の知覚へ届く体験をつくる。
-          </p>
+          <div class="about-summary">
+            <h3>鈴木 拓海</h3>
+            <p>東京大学 工学部<br />システム創成学科 SDMコース</p>
+          </div>
           <div class="about-copy">
             <p>
-              このサイトは、鈴木拓海の制作と関心領域をまとめたポートフォリオです。完成物だけでなく、何を考え、どの原理を調べ、どう実装へ落とし込んだかが伝わるように構成しています。
+              このサイトは、鈴木拓海の制作物と開発経験をまとめたポートフォリオです。各作品の概要、使用技術、デモまたはソースコードへのリンクを掲載しています。
             </p>
             <p>
-              現在は、現実の映像や動き、奥行き、光を計算可能な形で捉え、人の知覚や体験へ返す技術に関心を持ち、3Dグラフィックス、コンピュータビジョン、機械学習を学んでいます。
+              2024年から教育事業者向けWebシステムの開発に携わっています。現在は、3Dグラフィックス、コンピュータビジョン、機械学習を学びながら個人制作に取り組んでいます。
             </p>
             <dl class="about-facts">
               <div><dt>所属</dt><dd>東京大学 工学部 システム創成学科 SDMコース</dd></div>
@@ -75,11 +75,7 @@
             <p>
               Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系です。深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
             </p>
-            <dl class="project-meta">
-              <div><dt>領域</dt><dd>Real-time Visual Computing</dd></div>
-              <div><dt>技術</dt><dd>Python / PyTorch / OpenCV / OpenGL / GLSL</dd></div>
-              <div><dt>担当</dt><dd>企画・設計・実装・検証</dd></div>
-            </dl>
+            <p class="project-tech"><span>使用技術</span>Python / PyTorch / OpenCV / OpenGL / GLSL</p>
             <div class="links">
               <a href="https://github.com/suzutaku1014/ombrelle-live">Code & documentation ↗</a>
             </div>
@@ -98,11 +94,7 @@
             <p>
               レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサーです。海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
             </p>
-            <dl class="project-meta">
-              <div><dt>領域</dt><dd>Physically Based Rendering</dd></div>
-              <div><dt>技術</dt><dd>WebGL / GLSL / Ray Marching</dd></div>
-              <div><dt>担当</dt><dd>理論調査・設計・実装・検証</dd></div>
-            </dl>
+            <p class="project-tech"><span>使用技術</span>WebGL / GLSL / Ray Marching</p>
             <div class="links">
               <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">Live demo ↗</a>
               <a href="https://github.com/suzutaku1014/sky-ocean-renderer">Source ↗</a>
@@ -128,10 +120,10 @@
           </div>
           <div class="reference-list" aria-label="関連する公開制作物">
             <a class="reference" href="https://reslot-eight.vercel.app">
-              <span><b>ReSlot</b><small>Transactional workflow reference app</small></span><strong>Demo ↗</strong>
+              <span><b>ReSlot</b><small>Transactional workflow reference app</small><em>Next.js / Hono / PostgreSQL / Prisma / Playwright</em></span><strong>Demo ↗</strong>
             </a>
             <a class="reference" href="https://github.com/suzutaku1014/auditloom">
-              <span><b>Auditloom</b><small>Evidence-based repository auditing CLI</small></span><strong>Code ↗</strong>
+              <span><b>Auditloom</b><small>Evidence-based repository auditing CLI</small><em>TypeScript / Node.js / GitHub Actions</em></span><strong>Code ↗</strong>
             </a>
             <p class="disclosure">
               公開作品には、実務で得た設計上の問題意識を一般化し、独立して再実装したものが含まれます。顧客のコード・データ・固有情報は含みません。
@@ -139,23 +131,6 @@
           </div>
         </div>
 
-        <div class="skill-grid" aria-label="技術領域">
-          <article class="skill-group">
-            <span>実務</span>
-            <h3>Web Engineering</h3>
-            <p>TypeScript / Next.js / Hono / PostgreSQL / Testing / CI/CD</p>
-          </article>
-          <article class="skill-group">
-            <span>制作</span>
-            <h3>Visual Computing</h3>
-            <p>GLSL / WebGL / OpenGL / OpenCV / Real-time Rendering</p>
-          </article>
-          <article class="skill-group">
-            <span>学習中</span>
-            <h3>Vision &amp; ML</h3>
-            <p>PyTorch / Computer Vision / 3D Graphics / Machine Learning</p>
-          </article>
-        </div>
       </section>
 
       <section class="section" id="profile">
@@ -163,33 +138,20 @@
           <span class="section-number">04</span>
           <h2>プロフィール</h2>
         </div>
-        <div class="profile-intro">
-          <p class="statement">
-            技術を使うことより、<br />
-            技術で何を知覚できるようにするか。
-          </p>
-          <p>
-            Web開発で培った、曖昧な課題を分解して動くものへ落とし込む力を土台に、リアルタイム映像・空間表現の領域へ専門性を広げています。
-          </p>
+        <div class="career-list">
+          <article class="career-item">
+            <time>在学中</time>
+            <div><h3>東京大学 工学部</h3><p>システム創成学科 SDMコースに在籍。</p></div>
+          </article>
+          <article class="career-item">
+            <time>2024–</time>
+            <div><h3>教育事業者向けWebシステム開発</h3><p>要件整理、設計、実装、テスト、運用を担当。</p></div>
+          </article>
+          <article class="career-item">
+            <time>2026–</time>
+            <div><h3>3Dグラフィックス・画像認識の学習と制作</h3><p>GLSLによる物理ベースレンダリング、OpenCV・PyTorchを用いたリアルタイム映像処理に取り組む。</p></div>
+          </article>
         </div>
-        <ol class="timeline">
-          <li class="timeline-item">
-            <time>2024</time>
-            <div><h3>Webシステム開発</h3><p>教育事業者向けシステムで、要件整理から運用まで一連の開発を担当。</p></div>
-          </li>
-          <li class="timeline-item">
-            <time>2025 秋</time>
-            <div><h3>作りたい体験へ軸足を移す</h3><p>外から比較できる成果だけでなく、自分が価値を感じる対象へ深く向き合うことを選択基準にする。</p></div>
-          </li>
-          <li class="timeline-item">
-            <time>2026</time>
-            <div><h3>Visual Computingを学ぶ</h3><p>ゲームエンジンを入口に、光学・レンダリング・画像認識・機械学習の原理と実装を学習。</p></div>
-          </li>
-          <li class="timeline-item">
-            <time>現在</time>
-            <div><h3>現実と表現を接続する</h3><p>映像や空間情報にリアルタイムで応答し、人の見え方を変える技術を探究しています。</p></div>
-          </li>
-        </ol>
       </section>
 
       <section class="section contact" id="contact">
@@ -198,7 +160,7 @@
           <h2>連絡先</h2>
         </div>
         <div class="contact-grid">
-          <p class="statement">最後までご覧いただき、<br />ありがとうございます。</p>
+          <p class="contact-lead">制作物や開発経験についてのご連絡を受け付けています。</p>
           <div class="contact-copy">
             <p>制作や技術についてのご連絡は、メールまたはGitHubからお願いいたします。</p>
             <div class="contact-links">
