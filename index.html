@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="鈴木拓海 — Real-time Visual Computing / Computer Vision / 3DCG / Machine Learning" />
+    <meta property="og:title" content="Takumi Suzuki — Portfolio" />
+    <meta property="og:description" content="現実の映像・動き・奥行き・光を、計算可能な表現へ。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://suzutaku1014.github.io/" />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Takumi Suzuki — Portfolio</title>
+    <link rel="preconnect" href="https://raw.githubusercontent.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="wordmark" href="#top" aria-label="ページの先頭へ">TS</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#work">Work</a>
+        <a href="#background">Background</a>
+        <a href="https://github.com/suzutaku1014">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">TAKUMI SUZUKI · SOFTWARE ENGINEER</p>
+        <h1>現実を計算し、<br />知覚できる体験へ。</h1>
+        <p class="lead">
+          映像・動き・奥行き・光を捉え、リアルタイムに応答する表現をつくっています。<br />
+          3D Graphics · Computer Vision · Machine Learning
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#work">作品を見る</a>
+          <a class="button secondary" href="mailto:takumi.k.suzuki@gmail.com">Contact</a>
+        </div>
+        <div class="hero-rule" aria-hidden="true"><span></span></div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="index">01</p>
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>現在の探究</h2>
+          </div>
+        </div>
+
+        <article class="project project-featured">
+          <a class="project-media" href="https://github.com/suzutaku1014/ombrelle-live" aria-label="ombrelle-live のGitHubを開く">
+            <img
+              src="https://raw.githubusercontent.com/suzutaku1014/ombrelle-live/main/docs/images/demo.gif"
+              alt="Webカメラ映像を印象派風の筆触に変換するリアルタイムデモ"
+            />
+          </a>
+          <div class="project-copy">
+            <p class="project-number">01 / REAL-TIME VISION</p>
+            <h3>ombrelle-live</h3>
+            <p class="project-lead">人が動くと筆が傾ぎ、止まると絵が凪ぐ。</p>
+            <p>
+              Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系。
+              深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
+            </p>
+            <dl class="metrics">
+              <div><dt>Pipeline</dt><dd>OpenCV → PyTorch/MPS → OpenGL/GLSL</dd></div>
+              <div><dt>Model</dt><dd>25.6× fewer parameters</dd></div>
+              <div><dt>Rendering</dt><dd>52.9 → 134.6 fps*</dd></div>
+            </dl>
+            <p class="note">* 合成入力・計測環境上のA/B。実写への汎化性能は未検証。</p>
+            <div class="links">
+              <a href="https://github.com/suzutaku1014/ombrelle-live">Code & documentation ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-reverse">
+          <a class="project-media" href="https://suzutaku1014.github.io/sky-ocean-renderer/" aria-label="sky-ocean-renderer のライブデモを開く">
+            <img
+              src="https://raw.githubusercontent.com/suzutaku1014/sky-ocean-renderer/main/docs/screenshots/hero.png"
+              alt="大気散乱と海面反射を計算した空と海のリアルタイムレンダリング"
+            />
+          </a>
+          <div class="project-copy">
+            <p class="project-number">02 / PHYSICAL RENDERING</p>
+            <h3>sky-ocean-renderer</h3>
+            <p class="project-lead">光の式から、空と海を描く。</p>
+            <p>
+              レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサー。
+              海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
+            </p>
+            <dl class="metrics">
+              <div><dt>Core</dt><dd>GLSL / WebGL</dd></div>
+              <div><dt>Method</dt><dd>Ray marching / numerical integration</dd></div>
+              <div><dt>Output</dt><dd>Interactive browser demo</dd></div>
+            </dl>
+            <div class="links">
+              <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">Live demo ↗</a>
+              <a href="https://github.com/suzutaku1014/sky-ocean-renderer">Source ↗</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section systems" id="background">
+        <div class="section-heading">
+          <p class="index">02</p>
+          <div>
+            <p class="eyebrow">SOFTWARE ENGINEERING</p>
+            <h2>動くものを、使われるものへ</h2>
+          </div>
+        </div>
+        <div class="background-grid">
+          <div class="background-copy">
+            <p>
+              2024年から教育事業者向けWebシステムの開発に携わり、要件整理、設計、実装、テスト、運用までを担当してきました。
+              曖昧な課題を分解し、検証できる実装へ落とし込み、継続して変更できる状態まで整えることを強みにしています。
+            </p>
+            <ul class="stack" aria-label="技術スタック">
+              <li>TypeScript</li><li>Next.js</li><li>Hono</li><li>PostgreSQL</li><li>Testing</li><li>CI/CD</li>
+            </ul>
+          </div>
+          <div class="reference-list">
+            <a class="reference" href="https://reslot-eight.vercel.app">
+              <span><b>ReSlot</b><small>Transactional workflow reference app</small></span><strong>Demo ↗</strong>
+            </a>
+            <a class="reference" href="https://github.com/suzutaku1014/auditloom">
+              <span><b>Auditloom</b><small>Evidence-based repository auditing CLI</small></span><strong>Code ↗</strong>
+            </a>
+          </div>
+        </div>
+        <p class="disclosure">
+          公開作品には、実務で得た設計上の問題意識を一般化し、独立して再実装したものが含まれます。顧客のコード・データ・固有情報は含みません。
+        </p>
+      </section>
+
+      <section class="section profile">
+        <div class="section-heading">
+          <p class="index">03</p>
+          <div>
+            <p class="eyebrow">PROFILE</p>
+            <h2>鈴木 拓海</h2>
+          </div>
+        </div>
+        <div class="profile-grid">
+          <p class="profile-lead">
+            東京大学 工学部 システム創成学科 SDMコース。<br />
+            現実とデジタル表現の関係を、ソフトウェアによって設計することに関心があります。
+          </p>
+          <div class="profile-links">
+            <a href="https://github.com/suzutaku1014">GitHub ↗</a>
+            <a href="mailto:takumi.k.suzuki@gmail.com">takumi.k.suzuki@gmail.com ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Takumi Suzuki</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
