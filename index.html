@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="鈴木拓海 — Real-time Visual Computing / Computer Vision / 3DCG / Machine Learning" />
     <meta property="og:title" content="Takumi Suzuki — Portfolio" />
-    <meta property="og:description" content="現実の映像・動き・奥行き・光を、計算可能な表現へ。" />
+    <meta property="og:description" content="現実とデジタル表現の関係を、ソフトウェアによって実装する。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suzutaku1014.github.io/" />
-    <meta name="theme-color" content="#566eaa" />
+    <meta name="theme-color" content="#f3f2ee" />
     <title>Takumi Suzuki — Portfolio</title>
     <link rel="preconnect" href="https://raw.githubusercontent.com" />
     <link rel="preload" href="assets/autumn-hero.jpg" as="image" />
@@ -17,23 +17,53 @@
   <body>
     <header class="nav">
       <nav aria-label="メインナビゲーション">
-        <a href="#work">Work</a>
-        <a href="#background">Background</a>
-        <a href="https://github.com/suzutaku1014">GitHub</a>
+        <a href="#top">Top</a>
+        <a href="#about">About</a>
+        <a href="#work">Works</a>
+        <a href="#experience">Experience</a>
+        <a href="#profile">Profile</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero" aria-label="Takumi Suzuki Portfolio">
         <h1><span>Takumi Suzuki</span><span>Portfolio</span></h1>
       </section>
 
-      <section class="section work" id="work">
+      <section class="section" id="about">
         <div class="section-heading">
+          <span class="section-number">01</span>
+          <h2>このサイトについて</h2>
+        </div>
+        <div class="about-grid">
+          <p class="statement">
+            現実とデジタルのあいだに、<br />
+            人の知覚へ届く体験をつくる。
+          </p>
+          <div class="about-copy">
+            <p>
+              このサイトは、鈴木拓海の制作と関心領域をまとめたポートフォリオです。完成物だけでなく、何を考え、どの原理を調べ、どう実装へ落とし込んだかが伝わるように構成しています。
+            </p>
+            <p>
+              現在は、現実の映像や動き、奥行き、光を計算可能な形で捉え、人の知覚や体験へ返す技術に関心を持ち、3Dグラフィックス、コンピュータビジョン、機械学習を学んでいます。
+            </p>
+            <dl class="about-facts">
+              <div><dt>所属</dt><dd>東京大学 工学部 システム創成学科 SDMコース</dd></div>
+              <div><dt>経験</dt><dd>Webアプリケーションの設計・開発・運用</dd></div>
+              <div><dt>関心</dt><dd>Visual Computing / Computer Vision / 3DCG / ML</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <span class="section-number">02</span>
           <h2>作品</h2>
         </div>
 
-        <article class="project project-featured">
+        <article class="project">
           <a class="project-media" href="https://github.com/suzutaku1014/ombrelle-live" aria-label="ombrelle-live のGitHubを開く">
             <img
               src="https://raw.githubusercontent.com/suzutaku1014/ombrelle-live/main/docs/images/demo.gif"
@@ -43,9 +73,13 @@
           <div class="project-copy">
             <h3>ombrelle-live</h3>
             <p>
-              Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系。
-              深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
+              Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系です。深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
             </p>
+            <dl class="project-meta">
+              <div><dt>領域</dt><dd>Real-time Visual Computing</dd></div>
+              <div><dt>技術</dt><dd>Python / PyTorch / OpenCV / OpenGL / GLSL</dd></div>
+              <div><dt>担当</dt><dd>企画・設計・実装・検証</dd></div>
+            </dl>
             <div class="links">
               <a href="https://github.com/suzutaku1014/ombrelle-live">Code & documentation ↗</a>
             </div>
@@ -62,9 +96,13 @@
           <div class="project-copy">
             <h3>sky-ocean-renderer</h3>
             <p>
-              レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサー。
-              海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
+              レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサーです。海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
             </p>
+            <dl class="project-meta">
+              <div><dt>領域</dt><dd>Physically Based Rendering</dd></div>
+              <div><dt>技術</dt><dd>WebGL / GLSL / Ray Marching</dd></div>
+              <div><dt>担当</dt><dd>理論調査・設計・実装・検証</dd></div>
+            </dl>
             <div class="links">
               <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">Live demo ↗</a>
               <a href="https://github.com/suzutaku1014/sky-ocean-renderer">Source ↗</a>
@@ -73,17 +111,22 @@
         </article>
       </section>
 
-      <section class="section systems" id="background">
+      <section class="section" id="experience">
         <div class="section-heading">
-          <h2>業務アプリ開発</h2>
+          <span class="section-number">03</span>
+          <h2>経験と技術</h2>
         </div>
-        <div class="background-grid">
-          <div class="background-copy">
+        <div class="experience-grid">
+          <div class="experience-copy">
+            <h3>業務アプリ開発</h3>
             <p>
               2024年から教育事業者向けWebシステムの開発に携わり、要件整理、設計、実装、テスト、運用までを担当してきました。
             </p>
+            <p>
+              曖昧な業務要件を分解し、画面・API・データモデルへ落とし込み、実際に使われ続ける状態まで整えることを経験しています。
+            </p>
           </div>
-          <div class="reference-list">
+          <div class="reference-list" aria-label="関連する公開制作物">
             <a class="reference" href="https://reslot-eight.vercel.app">
               <span><b>ReSlot</b><small>Transactional workflow reference app</small></span><strong>Demo ↗</strong>
             </a>
@@ -95,20 +138,73 @@
             </p>
           </div>
         </div>
+
+        <div class="skill-grid" aria-label="技術領域">
+          <article class="skill-group">
+            <span>実務</span>
+            <h3>Web Engineering</h3>
+            <p>TypeScript / Next.js / Hono / PostgreSQL / Testing / CI/CD</p>
+          </article>
+          <article class="skill-group">
+            <span>制作</span>
+            <h3>Visual Computing</h3>
+            <p>GLSL / WebGL / OpenGL / OpenCV / Real-time Rendering</p>
+          </article>
+          <article class="skill-group">
+            <span>学習中</span>
+            <h3>Vision &amp; ML</h3>
+            <p>PyTorch / Computer Vision / 3D Graphics / Machine Learning</p>
+          </article>
+        </div>
       </section>
 
-      <section class="section profile">
+      <section class="section" id="profile">
         <div class="section-heading">
-          <h2>鈴木 拓海</h2>
+          <span class="section-number">04</span>
+          <h2>プロフィール</h2>
         </div>
-        <div class="profile-grid">
-          <p class="profile-lead">
-            東京大学 工学部 システム創成学科 SDMコース。<br />
-            現実とデジタル表現の関係を、ソフトウェアによって実装します。
+        <div class="profile-intro">
+          <p class="statement">
+            技術を使うことより、<br />
+            技術で何を知覚できるようにするか。
           </p>
-          <div class="profile-links">
-            <a href="https://github.com/suzutaku1014">GitHub ↗</a>
-            <a href="mailto:takumi.k.suzuki@gmail.com">takumi.k.suzuki@gmail.com ↗</a>
+          <p>
+            Web開発で培った、曖昧な課題を分解して動くものへ落とし込む力を土台に、リアルタイム映像・空間表現の領域へ専門性を広げています。
+          </p>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <time>2024</time>
+            <div><h3>Webシステム開発</h3><p>教育事業者向けシステムで、要件整理から運用まで一連の開発を担当。</p></div>
+          </li>
+          <li class="timeline-item">
+            <time>2025 秋</time>
+            <div><h3>作りたい体験へ軸足を移す</h3><p>外から比較できる成果だけでなく、自分が価値を感じる対象へ深く向き合うことを選択基準にする。</p></div>
+          </li>
+          <li class="timeline-item">
+            <time>2026</time>
+            <div><h3>Visual Computingを学ぶ</h3><p>ゲームエンジンを入口に、光学・レンダリング・画像認識・機械学習の原理と実装を学習。</p></div>
+          </li>
+          <li class="timeline-item">
+            <time>現在</time>
+            <div><h3>現実と表現を接続する</h3><p>映像や空間情報にリアルタイムで応答し、人の見え方を変える技術を探究しています。</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <h2>連絡先</h2>
+        </div>
+        <div class="contact-grid">
+          <p class="statement">最後までご覧いただき、<br />ありがとうございます。</p>
+          <div class="contact-copy">
+            <p>制作や技術についてのご連絡は、メールまたはGitHubからお願いいたします。</p>
+            <div class="contact-links">
+              <a href="mailto:takumi.k.suzuki@gmail.com">takumi.k.suzuki@gmail.com ↗</a>
+              <a href="https://github.com/suzutaku1014">GitHub ↗</a>
+            </div>
           </div>
         </div>
       </section>
