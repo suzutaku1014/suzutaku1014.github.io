@@ -2,7 +2,7 @@
   --ink: #292929;
   --body: #444444;
   --muted: #666666;
-  --paper: #ffffff;
+  --paper: #f5f6f7;
   --surface: #f2f6f9;
   --line: #e6e6e6;
   --accent: #245790;
@@ -20,7 +20,13 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(135deg, rgba(232, 237, 242, .16), rgba(255, 255, 255, .08) 48%, rgba(224, 231, 238, .12)),
+    url("assets/paper-texture.jpg");
+  background-position: center top, center top;
+  background-size: auto, 1254px 1254px;
+  background-repeat: no-repeat, repeat;
   font-family: var(--font-text);
   font-size: var(--text-body);
   font-weight: 400;
@@ -48,7 +54,7 @@ h1, h2, h3, p, dl, dd { margin-top: 0; }
 }
 .nav.is-scrolled {
   color: var(--ink);
-  background: rgba(255,255,255,.94);
+  background: rgba(245,246,247,.94);
   box-shadow: 0 1px 0 rgba(27,29,34,.10);
   text-shadow: none;
   backdrop-filter: blur(14px);
