@@ -11,11 +11,11 @@
     <meta name="theme-color" content="#566eaa" />
     <title>Takumi Suzuki — Portfolio</title>
     <link rel="preconnect" href="https://raw.githubusercontent.com" />
+    <link rel="preload" href="assets/autumn-hero.jpg" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="nav">
-      <a class="wordmark" href="#top" aria-label="ページの先頭へ"></a>
       <nav aria-label="メインナビゲーション">
         <a href="#work">Work</a>
         <a href="#background">Background</a>
@@ -25,26 +25,12 @@
 
     <main id="top">
       <section class="hero">
-        <p class="eyebrow hero-name">TAKUMI SUZUKI</p>
-        <h1>現実を計算し、<br />知覚できる体験へ。</h1>
-        <p class="lead">
-          映像・動き・奥行き・光を捉え、リアルタイムに応答する表現をつくっています。<br />
-          3D Graphics · Computer Vision · Machine Learning
-        </p>
-        <div class="actions">
-          <a class="button primary" href="#work">作品を見る</a>
-          <a class="button secondary" href="mailto:takumi.k.suzuki@gmail.com">Contact</a>
-        </div>
-        <div class="hero-rule" aria-hidden="true"><span></span></div>
+        <h1><span>Takumi Suzuki</span><span>Portfolio</span></h1>
       </section>
 
       <section class="section" id="work">
         <div class="section-heading">
-          <p class="index">01</p>
-          <div>
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2>現在の探究</h2>
-          </div>
+          <h2>現在の探究</h2>
         </div>
 
         <article class="project project-featured">
@@ -55,7 +41,6 @@
             />
           </a>
           <div class="project-copy">
-            <p class="project-number">01 / REAL-TIME VISION</p>
             <h3>ombrelle-live</h3>
             <p class="project-lead">人が動くと筆が傾ぎ、止まると絵が凪ぐ。</p>
             <p>
@@ -76,7 +61,6 @@
             />
           </a>
           <div class="project-copy">
-            <p class="project-number">02 / PHYSICAL RENDERING</p>
             <h3>sky-ocean-renderer</h3>
             <p class="project-lead">光の式から、空と海を描く。</p>
             <p>
@@ -93,11 +77,7 @@
 
       <section class="section systems" id="background">
         <div class="section-heading">
-          <p class="index">02</p>
-          <div>
-            <p class="eyebrow">SOFTWARE ENGINEERING</p>
-            <h2>業務アプリ開発</h2>
-          </div>
+          <h2>業務アプリ開発</h2>
         </div>
         <div class="background-grid">
           <div class="background-copy">
@@ -112,20 +92,16 @@
             <a class="reference" href="https://github.com/suzutaku1014/auditloom">
               <span><b>Auditloom</b><small>Evidence-based repository auditing CLI</small></span><strong>Code ↗</strong>
             </a>
+            <p class="disclosure">
+              公開作品には、実務で得た設計上の問題意識を一般化し、独立して再実装したものが含まれます。顧客のコード・データ・固有情報は含みません。
+            </p>
           </div>
         </div>
-        <p class="disclosure">
-          公開作品には、実務で得た設計上の問題意識を一般化し、独立して再実装したものが含まれます。顧客のコード・データ・固有情報は含みません。
-        </p>
       </section>
 
       <section class="section profile">
         <div class="section-heading">
-          <p class="index">03</p>
-          <div>
-            <p class="eyebrow">PROFILE</p>
-            <h2>鈴木 拓海</h2>
-          </div>
+          <h2>鈴木 拓海</h2>
         </div>
         <div class="profile-grid">
           <p class="profile-lead">
