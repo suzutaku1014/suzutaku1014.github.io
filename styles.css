@@ -151,16 +151,16 @@ h3 {
 .experience-copy h3 { font-size: clamp(31px, 3.6vw, 46px); }
 .experience-copy p { max-width: 540px; color: var(--body); font-size: var(--text-lead); line-height: 1.95; }
 .experience-copy p + p { margin-top: 24px; }
-.reference-list { display: grid; gap: 32px; }
-.reference { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 0; transition: transform .2s ease; }
+.reference-list { display: grid; gap: 42px; }
+.reference { display: grid; grid-template-columns: 1fr; align-items: start; gap: 16px; padding: 0; transition: transform .2s ease; }
 .reference:hover { transform: translateX(4px); }
-.reference > span:first-child { display: grid; gap: 5px; }
-.reference b { font-size: 1.5rem; font-weight: 500; }
-.reference small { color: var(--muted); font-size: .9375rem; }
-.reference em { color: var(--accent); font-size: var(--text-note); font-style: normal; }
-.reference-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px; }
-.reference-actions a { color: var(--accent); border-bottom: 1px solid currentColor; font-size: var(--text-meta); font-weight: 600; }
-.disclosure { max-width: 650px; margin: 8px 0 0; color: var(--muted); font-size: var(--text-note); line-height: 1.85; }
+.reference > span:first-child { display: grid; gap: 7px; }
+.reference b { font-size: clamp(1.75rem, 2.6vw, 2.15rem); font-weight: 500; line-height: 1.15; }
+.reference small { color: var(--body); font-size: 1.0625rem; line-height: 1.6; }
+.reference em { color: var(--accent); font-size: .9375rem; line-height: 1.65; font-style: normal; }
+.reference-actions { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 20px; }
+.reference-actions a { color: var(--accent); border-bottom: 1px solid currentColor; font-size: 1rem; font-weight: 600; }
+.disclosure { max-width: 650px; margin: 6px 0 0; color: var(--muted); font-size: .9375rem; line-height: 1.9; }
 .career-list { display: grid; gap: 46px; }
 .career-item { display: grid; grid-template-columns: 120px 1fr; gap: 34px; padding: 0; }
 .career-item + .career-item { margin-top: 0; }
