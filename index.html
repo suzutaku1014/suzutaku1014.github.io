@@ -8,14 +8,14 @@
     <meta property="og:description" content="現実の映像・動き・奥行き・光を、計算可能な表現へ。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://suzutaku1014.github.io/" />
-    <meta name="theme-color" content="#0d1117" />
+    <meta name="theme-color" content="#566eaa" />
     <title>Takumi Suzuki — Portfolio</title>
     <link rel="preconnect" href="https://raw.githubusercontent.com" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="nav">
-      <a class="wordmark" href="#top" aria-label="ページの先頭へ">TS</a>
+      <a class="wordmark" href="#top" aria-label="ページの先頭へ"></a>
       <nav aria-label="メインナビゲーション">
         <a href="#work">Work</a>
         <a href="#background">Background</a>
@@ -25,7 +25,7 @@
 
     <main id="top">
       <section class="hero">
-        <p class="eyebrow">TAKUMI SUZUKI · SOFTWARE ENGINEER</p>
+        <p class="eyebrow hero-name">TAKUMI SUZUKI</p>
         <h1>現実を計算し、<br />知覚できる体験へ。</h1>
         <p class="lead">
           映像・動き・奥行き・光を捉え、リアルタイムに応答する表現をつくっています。<br />
@@ -62,12 +62,6 @@
               Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系。
               深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
             </p>
-            <dl class="metrics">
-              <div><dt>Pipeline</dt><dd>OpenCV → PyTorch/MPS → OpenGL/GLSL</dd></div>
-              <div><dt>Model</dt><dd>25.6× fewer parameters</dd></div>
-              <div><dt>Rendering</dt><dd>52.9 → 134.6 fps*</dd></div>
-            </dl>
-            <p class="note">* 合成入力・計測環境上のA/B。実写への汎化性能は未検証。</p>
             <div class="links">
               <a href="https://github.com/suzutaku1014/ombrelle-live">Code & documentation ↗</a>
             </div>
@@ -89,11 +83,6 @@
               レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサー。
               海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
             </p>
-            <dl class="metrics">
-              <div><dt>Core</dt><dd>GLSL / WebGL</dd></div>
-              <div><dt>Method</dt><dd>Ray marching / numerical integration</dd></div>
-              <div><dt>Output</dt><dd>Interactive browser demo</dd></div>
-            </dl>
             <div class="links">
               <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">Live demo ↗</a>
               <a href="https://github.com/suzutaku1014/sky-ocean-renderer">Source ↗</a>
@@ -107,18 +96,14 @@
           <p class="index">02</p>
           <div>
             <p class="eyebrow">SOFTWARE ENGINEERING</p>
-            <h2>動くものを、使われるものへ</h2>
+            <h2>業務アプリ開発</h2>
           </div>
         </div>
         <div class="background-grid">
           <div class="background-copy">
             <p>
               2024年から教育事業者向けWebシステムの開発に携わり、要件整理、設計、実装、テスト、運用までを担当してきました。
-              曖昧な課題を分解し、検証できる実装へ落とし込み、継続して変更できる状態まで整えることを強みにしています。
             </p>
-            <ul class="stack" aria-label="技術スタック">
-              <li>TypeScript</li><li>Next.js</li><li>Hono</li><li>PostgreSQL</li><li>Testing</li><li>CI/CD</li>
-            </ul>
           </div>
           <div class="reference-list">
             <a class="reference" href="https://reslot-eight.vercel.app">
@@ -145,7 +130,7 @@
         <div class="profile-grid">
           <p class="profile-lead">
             東京大学 工学部 システム創成学科 SDMコース。<br />
-            現実とデジタル表現の関係を、ソフトウェアによって設計することに関心があります。
+            現実とデジタル表現の関係を、ソフトウェアによって実装します。
           </p>
           <div class="profile-links">
             <a href="https://github.com/suzutaku1014">GitHub ↗</a>
