@@ -19,7 +19,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", sans-serif;
   font-size: var(--text-body);
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
@@ -47,7 +47,7 @@ h1, h2, h3, p, dl, dd { margin-top: 0; }
   text-shadow: none;
   backdrop-filter: blur(14px);
 }
-.nav nav { display: flex; gap: 24px; font-family: Georgia, "Times New Roman", serif; font-size: var(--text-meta); letter-spacing: .025em; }
+.nav nav { display: flex; gap: 24px; font-size: var(--text-meta); font-weight: 600; letter-spacing: .04em; }
 .nav nav a { border-bottom: 1px solid transparent; }
 .nav nav a:hover, .nav nav a:focus-visible { color: var(--accent); border-color: currentColor; }
 
@@ -84,11 +84,10 @@ main, footer { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
   display: grid;
   gap: 4px;
   margin: 0;
-  font-family: Georgia, "Yu Mincho", serif;
   font-size: clamp(52px, 8vw, 112px);
-  font-weight: 400;
+  font-weight: 600;
   line-height: .92;
-  letter-spacing: -.045em;
+  letter-spacing: -.055em;
   text-shadow: 0 2px 28px rgba(0,0,0,.42);
 }
 .hero h1 span { display: block; }
@@ -98,19 +97,17 @@ main, footer { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
 h2 {
   position: relative;
   margin-bottom: 0;
-  font-family: Georgia, "Yu Mincho", serif;
   font-size: clamp(42px, 5.5vw, 68px);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -.04em;
+  letter-spacing: -.045em;
 }
 h3 {
   margin-bottom: 20px;
-  font-family: Georgia, "Yu Mincho", serif;
   font-size: clamp(31px, 3.6vw, 50px);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.15;
-  letter-spacing: -.035em;
+  letter-spacing: -.03em;
 }
 
 .about-grid, .experience-grid, .contact-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(48px, 8vw, 110px); align-items: start; }
@@ -118,7 +115,7 @@ h3 {
 .about-summary p { color: var(--body); font-size: var(--text-lead); line-height: 1.8; }
 .about-copy > p { color: var(--body); font-size: var(--text-lead); line-height: 1.95; }
 .about-copy > p + p { margin-top: 28px; }
-.about-facts { margin: 44px 0 0; padding: 22px 26px; background: var(--surface); }
+.about-facts { margin: 44px 0 0; padding: 0; }
 .about-facts div { display: grid; grid-template-columns: 72px 1fr; gap: 20px; padding: 9px 0; }
 .about-facts dt { color: var(--accent); font-size: var(--text-meta); font-weight: 700; }
 .about-facts dd { margin: 0; color: var(--body); }
@@ -127,12 +124,12 @@ h3 {
 .project:last-child { padding-bottom: 0; }
 .project-reverse { grid-template-columns: minmax(320px, .78fr) minmax(0, 1.22fr); }
 .project-reverse .project-media { order: 2; }
-.project-media { position: relative; overflow: hidden; background: var(--surface); box-shadow: 0 24px 58px rgba(36,87,144,.12), 0 0 0 1px var(--line); }
+.project-media { position: relative; overflow: hidden; background: var(--surface); box-shadow: 0 24px 58px rgba(0,0,0,.14), 0 0 0 1px var(--line); }
 .project-media::after { position: absolute; inset: 0; content: ""; border: 1px solid rgba(255,255,255,.22); pointer-events: none; }
 .project-media img { aspect-ratio: 16 / 10; object-fit: cover; transition: transform .6s ease; }
 .project-media:hover img { transform: scale(1.025); }
 .project-copy > p { color: var(--body); line-height: 1.95; }
-.project-details { display: grid; gap: 10px; margin: 28px 0 0; padding: 20px 22px; background: var(--surface); }
+.project-details { display: grid; gap: 10px; margin: 28px 0 0; padding: 0; }
 .project-details div { display: grid; grid-template-columns: 112px 1fr; gap: 16px; }
 .project-details dt { color: var(--accent); font-size: var(--text-meta); font-weight: 700; }
 .project-details dd { margin: 0; color: var(--muted); font-size: var(--text-meta); line-height: 1.75; }
@@ -143,24 +140,24 @@ h3 {
 .experience-copy p { max-width: 540px; color: var(--body); font-size: var(--text-lead); line-height: 1.95; }
 .experience-copy p + p { margin-top: 24px; }
 .reference-list { display: grid; gap: 32px; }
-.reference { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 22px 24px; background: var(--surface); transition: transform .2s ease, box-shadow .2s ease; }
-.reference:hover { box-shadow: 0 12px 30px rgba(36,87,144,.09); transform: translateY(-2px); }
+.reference { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px; padding: 0; transition: transform .2s ease; }
+.reference:hover { transform: translateX(4px); }
 .reference > span:first-child { display: grid; gap: 5px; }
-.reference b { font-family: Georgia, serif; font-size: 1.5rem; font-weight: 400; }
+.reference b { font-size: 1.5rem; font-weight: 700; letter-spacing: -.02em; }
 .reference small { color: var(--muted); font-size: .9375rem; }
 .reference em { color: var(--accent); font-size: var(--text-note); font-style: normal; }
 .reference-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px; }
 .reference-actions a { color: var(--accent); border-bottom: 1px solid currentColor; font-size: var(--text-meta); font-weight: 700; }
 .disclosure { max-width: 650px; margin: 8px 0 0; color: var(--muted); font-size: var(--text-note); line-height: 1.85; }
-.career-list { display: grid; gap: 0; }
-.career-item { display: grid; grid-template-columns: 120px 1fr; gap: 34px; padding: 32px 28px; background: var(--surface); }
-.career-item + .career-item { margin-top: 8px; }
-.career-item time { padding-top: 5px; color: var(--accent); font-family: Georgia, serif; font-size: var(--text-meta); }
+.career-list { display: grid; gap: 46px; }
+.career-item { display: grid; grid-template-columns: 120px 1fr; gap: 34px; padding: 0; }
+.career-item + .career-item { margin-top: 0; }
+.career-item time { padding-top: 5px; color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: var(--text-meta); font-weight: 700; }
 .career-item h3 { margin-bottom: 8px; font-size: clamp(24px, 2.6vw, 34px); }
 .career-item p { max-width: 720px; margin-bottom: 0; color: var(--body); }
 
 .contact { padding-bottom: clamp(110px, 13vw, 170px); }
-.contact-lead { margin-bottom: 0; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(26px, 3.2vw, 40px); line-height: 1.55; letter-spacing: -.025em; }
+.contact-lead { margin-bottom: 0; font-size: clamp(26px, 3.2vw, 40px); font-weight: 600; line-height: 1.5; letter-spacing: -.03em; }
 .contact-copy > p { color: var(--body); font-size: var(--text-lead); }
 footer { display: flex; justify-content: space-between; padding: 28px 0 42px; color: var(--muted); font-size: var(--text-note); }
 
