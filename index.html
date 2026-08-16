@@ -27,7 +27,6 @@
         <a href="#work">Works</a>
         <a href="#experience">Experience</a>
         <a href="#profile">Profile</a>
-        <a href="#contact">Contact</a>
         <a href="https://github.com/suzutaku1014">GitHub</a>
       </nav>
     </header>
@@ -75,7 +74,7 @@
             />
           </a>
           <div class="project-copy">
-            <h3>ombrelle-live</h3>
+            <h3>印象派カメラ</h3>
             <p>
               Webカメラ映像を、単眼深度とオプティカルフローで駆動する印象派表現へ変換するリアルタイム処理系です。深度を筆の大きさと空気遠近へ、動きを筆触の向きへ接続しています。
             </p>
@@ -84,7 +83,7 @@
               <div><dt>実装のポイント</dt><dd>単眼深度を筆の大きさと空気遠近へ、オプティカルフローを筆触の向きへ対応づけ、映像の変化を描画へ反映。</dd></div>
             </dl>
             <div class="links">
-              <a href="https://github.com/suzutaku1014/ombrelle-live">Code &amp; documentation ↗</a>
+              <a href="https://github.com/suzutaku1014/ombrelle-live">コード・解説 ↗</a>
             </div>
           </div>
         </article>
@@ -97,7 +96,7 @@
             />
           </a>
           <div class="project-copy">
-            <h3>sky-ocean-renderer</h3>
+            <h3>空と海の物理ベースレンダラー</h3>
             <p>
               レイリー散乱・ミー散乱・Beer–Lambert則をフラグメントシェーダ内で数値積分するWebGLレイトレーサーです。海面のフレネル反射、体積雲、太陽と月の昼夜変化を同じ光のモデルにつないでいます。
             </p>
@@ -106,8 +105,8 @@
               <div><dt>実装のポイント</dt><dd>大気散乱をフラグメントシェーダ内で数値積分し、空・海面反射・体積雲・昼夜変化を同じ光のモデルへ統合。</dd></div>
             </dl>
             <div class="links">
-              <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">Live demo ↗</a>
-              <a href="https://github.com/suzutaku1014/sky-ocean-renderer">Source ↗</a>
+              <a href="https://suzutaku1014.github.io/sky-ocean-renderer/">デモ ↗</a>
+              <a href="https://github.com/suzutaku1014/sky-ocean-renderer">ソースコード ↗</a>
             </div>
           </div>
         </article>
@@ -115,36 +114,32 @@
 
       <section class="section" id="experience">
         <div class="section-heading">
-          <h2>経験と技術</h2>
+          <h2>実務経験</h2>
         </div>
         <div class="experience-grid">
           <div class="experience-copy">
             <h3>教育事業者向け業務システム</h3>
             <p>
-              2024年から、オンライン個別指導事業で生徒・講師・運営者が利用するWebシステムの要件整理、設計、実装、テスト、運用を担当しています。スプレッドシート、GAS、連絡ツールに分散していた授業予定、振替、勤怠、通知、履歴を、一つの業務フローとして再設計しました。
+              大学在学中の2024年から、約1,000名の生徒が利用するオンライン個別指導事業のWebシステム開発を担当しています。授業予定、振替、勤怠、通知などの業務を支え、1年半以上継続して運用されています。
             </p>
             <p>
-              現場へのヒアリングとユーザーテストを通じて、要望を画面・状態遷移・データモデルへ変換しています。システム化した一部の定型業務では、確認・入力・集計・連絡に要する時間を従来比で10分の1以下に削減しました。
-            </p>
-            <p>
-              初期版の運用で見えた保守性とテスト容易性の課題を踏まえ、現在は機能単位の構成、型付きAPI契約、業務ロジックとDB・外部連携の分離、段階的なデータ移行を含む再設計にも取り組んでいます。
+              現場ヒアリングから要件を整理し、画面・API・データベースの設計、実装、テスト、リリース後の改善まで一貫して担当しました。システム化した一部の定型業務では、作業時間を従来比で10分の1以下に削減しています。
             </p>
             <dl class="experience-details">
-              <div><dt>担当範囲</dt><dd>要件整理 / UI・API・DB設計 / 実装 / 認証・認可 / テスト / CI/CD / リリース・運用</dd></div>
-              <div><dt>業務領域</dt><dd>授業予定 / 振替 / 生徒・講師管理 / 勤怠 / 教材 / 通知 / 操作履歴 / LINE連携</dd></div>
-              <div><dt>設計・品質</dt><dd>対象データ単位の認可、状態遷移、トランザクション、Outbox、監査ログ、OpenAPIによるAPI契約</dd></div>
-              <div><dt>検証・運用</dt><dd>Unit・Integration・E2E、実PostgreSQL、Preview環境、Migration、Backup、Sentry</dd></div>
+              <div><dt>規模</dt><dd>生徒約1,000名 / 1年半以上継続運用 / 累計9万件超の授業予定データ</dd></div>
+              <div><dt>担当範囲</dt><dd>要件整理 / UI・API・DB設計 / 実装 / テスト / リリース / 運用改善</dd></div>
+              <div><dt>成果</dt><dd>一部の定型業務にかかる作業時間を従来比10分の1以下に削減</dd></div>
               <div><dt>使用技術</dt><dd>TypeScript / Next.js / React / Hono / Zod / Prisma / PostgreSQL（Supabase）/ Vercel / Turborepo</dd></div>
             </dl>
           </div>
           <div class="reference-list" aria-label="関連する公開制作物">
             <article class="reference">
-              <span><b>ReSlot</b><small>Transactional workflow reference app</small><em>Next.js / Hono / PostgreSQL / Prisma / Playwright</em></span>
-              <span class="reference-actions"><a href="https://reslot-eight.vercel.app">Demo ↗</a><a href="https://github.com/suzutaku1014/reslot">Source ↗</a></span>
+              <span><b>振替ワークフロー</b><small>ReSlot — 業務上の競合や通知失敗を扱う参照実装</small><em>Next.js / Hono / PostgreSQL / Prisma / Playwright</em></span>
+              <span class="reference-actions"><a href="https://reslot-eight.vercel.app">デモ ↗</a><a href="https://github.com/suzutaku1014/reslot">ソースコード ↗</a></span>
             </article>
             <article class="reference">
-              <span><b>Auditloom</b><small>Evidence-based repository auditing CLI</small><em>TypeScript / Node.js / GitHub Actions</em></span>
-              <span class="reference-actions"><a href="https://github.com/suzutaku1014/auditloom">Code ↗</a></span>
+              <span><b>リポジトリ監査CLI</b><small>Auditloom — 根拠付きでリポジトリの品質状態を検査</small><em>TypeScript / Node.js / GitHub Actions</em></span>
+              <span class="reference-actions"><a href="https://github.com/suzutaku1014/auditloom">ソースコード ↗</a></span>
             </article>
             <p class="disclosure">
               公開作品には、実務で得た設計上の問題意識を一般化し、独立して再実装したものが含まれます。顧客のコード・データ・固有情報は含みません。
@@ -174,21 +169,6 @@
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <div class="section-heading">
-          <h2>連絡先</h2>
-        </div>
-        <div class="contact-grid">
-          <p class="contact-lead">制作物や開発経験についてのご連絡を受け付けています。</p>
-          <div class="contact-copy">
-            <p>制作や技術についてのご連絡は、メールまたはGitHubからお願いいたします。</p>
-            <div class="contact-links">
-              <a href="mailto:takumi.k.suzuki@gmail.com">takumi.k.suzuki@gmail.com ↗</a>
-              <a href="https://github.com/suzutaku1014">GitHub ↗</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer>
