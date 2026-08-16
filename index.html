@@ -84,7 +84,7 @@
               <div><dt>実装のポイント</dt><dd>単眼深度を筆の大きさと空気遠近へ、オプティカルフローを筆触の向きへ対応づけ、映像の変化を描画へ反映。</dd></div>
             </dl>
             <div class="links">
-              <a href="https://github.com/suzutaku1014/ombrelle-live">Code & documentation ↗</a>
+              <a href="https://github.com/suzutaku1014/ombrelle-live">Code &amp; documentation ↗</a>
             </div>
           </div>
         </article>
@@ -119,13 +119,23 @@
         </div>
         <div class="experience-grid">
           <div class="experience-copy">
-            <h3>業務アプリ開発</h3>
+            <h3>教育事業者向け業務システム</h3>
             <p>
-              2024年から教育事業者向けWebシステムの開発に携わり、要件整理、設計、実装、テスト、運用までを担当してきました。
+              2024年から、オンライン個別指導事業で生徒・講師・運営者が利用するWebシステムの要件整理、設計、実装、テスト、運用を担当しています。スプレッドシート、GAS、連絡ツールに分散していた授業予定、振替、勤怠、通知、履歴を、一つの業務フローとして再設計しました。
             </p>
             <p>
-              曖昧な業務要件を分解し、画面・API・データモデルへ落とし込み、実際に使われ続ける状態まで整えることを経験しています。
+              現場へのヒアリングとユーザーテストを通じて、要望を画面・状態遷移・データモデルへ変換しています。システム化した一部の定型業務では、確認・入力・集計・連絡に要する時間を従来比で10分の1以下に削減しました。
             </p>
+            <p>
+              初期版の運用で見えた保守性とテスト容易性の課題を踏まえ、現在は機能単位の構成、型付きAPI契約、業務ロジックとDB・外部連携の分離、段階的なデータ移行を含む再設計にも取り組んでいます。
+            </p>
+            <dl class="experience-details">
+              <div><dt>担当範囲</dt><dd>要件整理 / UI・API・DB設計 / 実装 / 認証・認可 / テスト / CI/CD / リリース・運用</dd></div>
+              <div><dt>業務領域</dt><dd>授業予定 / 振替 / 生徒・講師管理 / 勤怠 / 教材 / 通知 / 操作履歴 / LINE連携</dd></div>
+              <div><dt>設計・品質</dt><dd>対象データ単位の認可、状態遷移、トランザクション、Outbox、監査ログ、OpenAPIによるAPI契約</dd></div>
+              <div><dt>検証・運用</dt><dd>Unit・Integration・E2E、実PostgreSQL、Preview環境、Migration、Backup、Sentry</dd></div>
+              <div><dt>使用技術</dt><dd>TypeScript / Next.js / React / Hono / Zod / Prisma / PostgreSQL（Supabase）/ Vercel / Turborepo</dd></div>
+            </dl>
           </div>
           <div class="reference-list" aria-label="関連する公開制作物">
             <article class="reference">
