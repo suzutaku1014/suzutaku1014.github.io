@@ -33,7 +33,10 @@
 
     <main id="top">
       <section class="hero" aria-label="Takumi Suzuki Portfolio">
-        <h1><span>Takumi Suzuki</span><span>Portfolio</span></h1>
+        <div class="hero-copy">
+          <h1><span>Takumi Suzuki</span><span>Portfolio</span></h1>
+          <p>Production Web Systems / Real-time Visual Computing</p>
+        </div>
       </section>
 
       <section class="section" id="about">
@@ -80,7 +83,7 @@
             </p>
             <dl class="project-details">
               <div><dt>使用技術</dt><dd>Python / PyTorch / OpenCV / OpenGL / GLSL</dd></div>
-              <div><dt>実装のポイント</dt><dd>単眼深度を筆の大きさと空気遠近へ、オプティカルフローを筆触の向きへ対応づけ、映像の変化を描画へ反映。</dd></div>
+              <div><dt>実装のポイント</dt><dd>推論と描画を非同期化し、深度モデルを蒸留。合成入力の計測環境で描画性能を52.9fpsから134.6fpsへ改善。</dd></div>
             </dl>
             <div class="links">
               <a href="https://github.com/suzutaku1014/ombrelle-live">コード・解説 ↗</a>
@@ -125,6 +128,9 @@
             <p>
               現場ヒアリングから要件を整理し、画面・API・データベースの設計、実装、テスト、リリース後の改善まで一貫して担当しました。
             </p>
+            <p>
+              Issueと仕様の設計、他メンバーのPull Requestレビュー、品質基準の整理、リリース計画と現場への共有も担っています。
+            </p>
             <dl class="experience-details">
               <div><dt>規模</dt><dd>生徒約1,000名 / 1年半以上継続運用 / 累計9万件超の授業予定データ</dd></div>
               <div><dt>担当範囲</dt><dd>要件整理 / UI・API・DB設計 / 実装 / テスト / リリース / 運用改善</dd></div>
@@ -142,6 +148,9 @@
             </article>
             <p class="disclosure">
               公開作品には、実務で得た設計上の問題意識を一般化し、独立して再実装したものが含まれます。顧客のコード・データ・固有情報は含みません。
+            </p>
+            <p class="disclosure">
+              公開制作物では、実装・文書作成の大部分にAIコーディングエージェントを利用しています。自身は題材と要件、設計方針、検証方法、出力の採否を決め、動作・数値・運用上の境界を確認しています。
             </p>
           </div>
         </div>
