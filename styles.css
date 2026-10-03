@@ -104,6 +104,16 @@ main, footer { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
   text-shadow: 0 2px 28px rgba(0,0,0,.42);
 }
 .hero h1 span { display: block; }
+.hero-copy { display: grid; gap: 24px; }
+.hero-copy > p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(.875rem, 1.45vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-shadow: 0 1px 16px rgba(0,0,0,.5);
+}
 
 .section { padding: clamp(96px, 11vw, 148px) 0; scroll-margin-top: 68px; }
 .section-heading { margin-bottom: clamp(58px, 7vw, 90px); }
@@ -183,6 +193,7 @@ footer { display: flex; justify-content: space-between; padding: 28px 0 42px; co
 
 .motion-ready .hero h1 span { opacity: 0; transform: translateY(.55em); animation: title-in 1.05s cubic-bezier(.22,1,.36,1) forwards; }
 .motion-ready .hero h1 span:nth-child(2) { animation-delay: .13s; }
+.motion-ready .hero-copy > p { opacity: 0; transform: translateY(.55em); animation: title-in .9s cubic-bezier(.22,1,.36,1) .28s forwards; }
 .motion-ready .nav { opacity: 0; animation: nav-in .8s ease .35s forwards; }
 .motion-ready .reveal {
   opacity: 0;
@@ -205,7 +216,6 @@ footer { display: flex; justify-content: space-between; padding: 28px 0 42px; co
 @media (max-width: 900px) {
   .nav { padding: 18px; }
   .nav nav { gap: 17px; }
-  .nav nav a:nth-child(3) { display: none; }
   main, footer { width: min(calc(100% - 36px), var(--max)); }
   .hero { min-height: 100svh; padding: 96px 18px 52px; }
   .hero h1 { font-size: clamp(48px, 15vw, 76px); }
@@ -231,7 +241,7 @@ footer { display: flex; justify-content: space-between; padding: 28px 0 42px; co
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
-  .motion-ready .hero h1 span, .motion-ready .nav, .motion-ready .reveal { opacity: 1; transform: none; animation: none; }
+  .motion-ready .hero h1 span, .motion-ready .hero-copy > p, .motion-ready .nav, .motion-ready .reveal { opacity: 1; transform: none; animation: none; }
   .motion-ready .project.reveal .project-media { clip-path: inset(0); }
   .motion-ready .project.reveal .project-media img { transform: none; }
 }
